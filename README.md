@@ -72,15 +72,22 @@ And now our element's text is centered.
 We can append elements to that element:
 
 ``` javascript
-var ul = document.createElement('ul')
+var ul = document.createElement('ul');
+let li;
 
-for (let i = 0; i < 3; i++) {
-  let li = document.createElement('li')
-  li.innerHTML = (i + 1).toString()
-  ul.appendChild(li)
-}
+li = document.createElement('li');
+li.innerHTML = ("0");
+ul.appendChild(li);
 
-element.appendChild(ul)
+li = document.createElement('li');
+li.innerHTML = ("1");
+ul.appendChild(li);
+
+li = document.createElement('li');
+li.innerHTML = ("2");
+ul.appendChild(li);
+
+element.appendChild(ul);
 ```
 
 Hm, that looks a bit ugly. Let's fix it
