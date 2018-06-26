@@ -90,7 +90,7 @@ ul.appendChild(li);
 element.appendChild(ul);
 ```
 
-Hm, that looks a bit ugly. Let's fix it
+Hm, our rendered page looks a bit ugly. Let's fix it
 
 ``` javascript
 ul.style.textAlign = 'left'
